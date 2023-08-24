@@ -3,7 +3,6 @@ const apiRouter = express.Router();
 
 import authToken from '../middleware/authToken'; // Auth token Middleware
 
-
 /* Routes for Login */
 import schoolLoginControl from '../controllers/admin/login/LoginController';
 apiRouter.route('/login').post(schoolLoginControl.getLogin); 
