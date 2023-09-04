@@ -87,6 +87,24 @@ apiRouter.route('/exam-get/:id').get(examControl.getExam);
 apiRouter.route('/exam-update/:id').put(examControl.updateExam);
 apiRouter.route('/exam-delete/:id').delete(examControl.deleteExam);
 
+/* Routes for Question */
+import questionControl from '../controllers/admin/masters/QuestionController';
+apiRouter.route('/question-ds').get(questionControl.getQuestionDS);
+apiRouter.route('/questions').get(questionControl.getQuestions);
+apiRouter.route('/question-add').post(questionControl.addQuestion);
+apiRouter.route('/question-get/:id').get(questionControl.getQuestion);
+apiRouter.route('/question-update/:id').put(questionControl.updateQuestion);
+apiRouter.route('/question-delete/:id').delete(questionControl.deleteQuestion);
+
+/* Routes for Game */
+import gameControl from '../controllers/admin/masters/GameController';
+apiRouter.route('/game-ds').get(gameControl.getGameDS);
+apiRouter.route('/games').get(gameControl.getGames);
+apiRouter.route('/game-add').post(gameControl.addGame);
+apiRouter.route('/game-get/:id').get(gameControl.getGame);
+apiRouter.route('/game-update/:id').put(gameControl.updateGame);
+apiRouter.route('/game-delete/:id').delete(gameControl.deleteGame);
+
 /* Routes for Mark */
 import markControl from '../controllers/admin/masters/MarkController';
 apiRouter.route('/mark-ds').get(markControl.getMarkDS);
