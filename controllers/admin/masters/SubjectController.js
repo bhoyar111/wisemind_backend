@@ -15,7 +15,7 @@ const { Subject, Level, Class } = model;
 import validateSubject from '../../../requests/subjectRequest';
 
 export default {
-    async getSubjecgtDS(req, res) {
+    async getSubjectDS(req, res) {
         try {
             const classes = await Class.getDS();
             const levels = await Level.getDS();

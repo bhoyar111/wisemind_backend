@@ -71,7 +71,7 @@ apiRouter.route('/level-delete/:id').delete(levelControl.deleteLevel);
 
 /* Routes for Subject */
 import subjectControl from '../controllers/admin/masters/SubjectController';
-apiRouter.route('/subject-ds').get(subjectControl.getSubjecgtDS);
+apiRouter.route('/subject-ds').get(subjectControl.getSubjectDS);
 apiRouter.route('/subjects').get(subjectControl.getSubjects);
 apiRouter.route('/subject-add').post(subjectControl.addSubject);
 apiRouter.route('/subject-get/:id').get(subjectControl.getSubject);
